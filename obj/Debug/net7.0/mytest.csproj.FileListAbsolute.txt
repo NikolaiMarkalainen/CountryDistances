@@ -1,0 +1,15 @@
+/home/nikolai/Documents/Csharp/mytest/bin/Debug/net7.0/mytest
+/home/nikolai/Documents/Csharp/mytest/bin/Debug/net7.0/mytest.deps.json
+/home/nikolai/Documents/Csharp/mytest/bin/Debug/net7.0/mytest.runtimeconfig.json
+/home/nikolai/Documents/Csharp/mytest/bin/Debug/net7.0/mytest.dll
+/home/nikolai/Documents/Csharp/mytest/bin/Debug/net7.0/mytest.pdb
+/home/nikolai/Documents/Csharp/mytest/obj/Debug/net7.0/mytest.csproj.AssemblyReference.cache
+/home/nikolai/Documents/Csharp/mytest/obj/Debug/net7.0/mytest.GeneratedMSBuildEditorConfig.editorconfig
+/home/nikolai/Documents/Csharp/mytest/obj/Debug/net7.0/mytest.AssemblyInfoInputs.cache
+/home/nikolai/Documents/Csharp/mytest/obj/Debug/net7.0/mytest.AssemblyInfo.cs
+/home/nikolai/Documents/Csharp/mytest/obj/Debug/net7.0/mytest.csproj.CoreCompileInputs.cache
+/home/nikolai/Documents/Csharp/mytest/obj/Debug/net7.0/mytest.dll
+/home/nikolai/Documents/Csharp/mytest/obj/Debug/net7.0/refint/mytest.dll
+/home/nikolai/Documents/Csharp/mytest/obj/Debug/net7.0/mytest.pdb
+/home/nikolai/Documents/Csharp/mytest/obj/Debug/net7.0/mytest.genruntimeconfig.cache
+/home/nikolai/Documents/Csharp/mytest/obj/Debug/net7.0/ref/mytest.dll
