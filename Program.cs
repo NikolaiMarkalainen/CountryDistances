@@ -5,21 +5,35 @@ class Program {
         Coordinates Helsinki = new Coordinates(60.1708, 24.9375);
         Coordinates Amsterdam = new Coordinates(52.3731, 4.8922);
         Coordinates London = new Coordinates(51.5072, -0.1275);
-        double distance = Helsinki.DistanceTo(Amsterdam);
-        Console.WriteLine("The distance between Helsinki and Amsterdam is: " + distance);
-        distance = Amsterdam.DistanceTo(London);
-        Console.WriteLine("The distance between Amsterdam and London is: " + distance);
         
-        
-        City helsinki = new City("Helsinki",Helsinki);
-        City amsterdam = new City("Amsterdam" , Amsterdam);
-        City london = new City("London", London);
-        distance = helsinki.DistanceTo(amsterdam);
-        Console.WriteLine("The distance between Amsterdam and Helsinki is: " + distance);
-        distance = amsterdam.DistanceTo(london);
-        Console.WriteLine("The distance between Amsterdam and London is: " + distance);
-        Console.WriteLine("{0,20} {1,20} {2, 20}\n {0,-20} \n {1,-20} \n {2,-20}", "Helsinki", "Amsterdam", "London");
+        City[] cities = new City[] {
+            new City("Helsinki", Helsinki),
+            new City("Amsterdam", Amsterdam),
+            new City("London", London)
+        };
+        // Array of cities to run through
 
+        Console.WriteLine("{0,40} {1,20} {2,20}", "Helsinki", "Amsterdam", "London");
+        double[,] distances = new double[cities.Length, cities.Length];
+        for (int i  = 0; i < cities.Length; i++){
+            for(int j = i + 1; j < cities.Length; j++){
+                distances[i, j] = cities[i].Location.DistanceTo(cities[j].Location);
+                distances[j, i] = distances[i, j];
+                // avoiding unnecessary calculations by setting j to start at i + 1;
+                // ensuring both matrixes stay the same value [i,j] && [j, i];
+            }
+        }
+        for(int i = 0; i < cities.Length; i++){
+            Console.Write("{0,-20}", cities[i].Name);
+            // Current city
+            for (int j = 0; j < cities.Length; j++){
+            // and OTHER city
+                Console.Write("{0,20:N2}", distances[i, j]);
+            // thousand seperator N2
+            }
+            Console.WriteLine();
+            // linebreak
+        }
     }
 }
 
@@ -72,13 +86,3 @@ public class Coordinates{
         }
 }
 }
-
-/*
-
-        City[] cities = new City[]{
-            new City("Helsinki", Helsinki);
-            new City("Amsterdam", Amsterdam);
-            new City("London", London);
-        }
-        
-*/
